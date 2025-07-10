@@ -95,7 +95,7 @@ class FileSystemInode:
             bloco = self.block_storage.get(block_id, "")
             conteudo += bloco
 
-        print(inode.blocks)
+        # print(inode.blocks)
         print(conteudo)
 
     def delete(self, name):
