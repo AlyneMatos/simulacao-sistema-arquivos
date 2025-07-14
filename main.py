@@ -27,6 +27,10 @@ def menu(fs):
             fs.read(args[0])
         elif op == "delete":
             fs.delete(args[0])
+        elif op == "inodes":
+            fs.show_inode_table()
+        elif op == "blocks":
+            fs.show_free_blocks()
         elif op == "exit":
             break
         else:
